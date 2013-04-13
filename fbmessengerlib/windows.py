@@ -9,6 +9,7 @@ _margin = 10
 
 # Chat position is not saved when the application closes
 _chat_rectangle = None
+main_window = toast_window = chat_window = None
 
 def init():
   base_url = "https://www.facebook.com"
