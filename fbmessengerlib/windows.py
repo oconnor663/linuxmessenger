@@ -90,7 +90,7 @@ def _terrible_toast_height_hack():
     height = toast_window.evaluate_js(
         'document.getElementById("toast-frame").offsetHeight')
     if height:
-      toast_window.set_size(TOAST_WIDTH, height)
+      toast_window.set_size(TOAST_WIDTH, height.toInt())
       _position_toast()
     else:
       print("Failed to hack out the toast height.")
