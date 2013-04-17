@@ -24,7 +24,7 @@ def inform(event, *args, **kwargs):
         callback(*args, **kwargs)
   run_on_main_thread(inform_UIT)
 
-def run_on_main_thread(action, *, delay_ms=0, repeating=False):
+def run_on_main_thread(action, delay_ms=0, repeating=False):
   if delay_ms == 0 and repeating:
     raise ValueError("Repeating with no delay? That's going to hog the CPU.")
   token = StopToken()

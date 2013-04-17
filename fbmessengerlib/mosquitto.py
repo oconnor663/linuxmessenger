@@ -704,7 +704,7 @@ class Mosquitto:
             raise ValueError('Invalid topic.')
         if qos<0 or qos>2:
             raise ValueError('Invalid QoS level.')
-        if isinstance(payload, str) == True or isinstance(payload, bytearray) == True:
+        if isinstance(payload, basestring) == True or isinstance(payload, bytearray) == True:
             local_payload = payload
         elif isinstance(payload, int) == True or isinstance(payload, float) == True:
             local_payload = str(payload)

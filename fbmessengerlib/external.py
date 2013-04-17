@@ -1,3 +1,5 @@
+# coding=UTF-8
+
 import webbrowser
 import json
 import inspect
